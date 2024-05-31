@@ -4,11 +4,9 @@
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://quadjr.github.io/aframe-gaussian-splatting/index.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.2.0/dist/aframe-extras.min.js"></script>
+  </head>
   <body>
     <a-scene renderer="antialias: false" stats>
-      <a-assets>
-        <a-asset-item id="splat" src="https://huggingface.co/NikV09/SplaTAM_S1/resolve/main/SplaTAM_S1_scaled.splat"></a-asset-item>
-      </a-assets>
       <a-entity gaussian_splatting="src: https://huggingface.co/NikV09/SplaTAM_S1/resolve/main/SplaTAM_S1_scaled.splat;" rotation="0 0 0" position="0 1.5 -2"></a-entity>
       <a-sky color="#000"></a-sky>
       <a-entity id="rig"
